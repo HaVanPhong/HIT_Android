@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <RelativeLayout
+        android:background="@mipmap/city"
+        tools:context=".MainActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_centerHorizontal="true"
+            android:id="@+id/fragment_progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+        <TextView
+            android:layout_marginTop="100dp"
+            android:id="@+id/imgLogo"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            android:textSize="50dp"
+            android:textColor="#CCCC66"
+            android:textStyle="italic"
+            android:typeface="monospace"
+            style="@style/CodeFont"
+            />
+        <EditText
+            android:textColor="@color/colorTextInput"
+            android:layout_below="@id/imgLogo"
+            android:id="@+id/tvUsername"
+            android:layout_width="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_input_login"
+            android:hint="Username"
+            android:textColorHint="@color/textHint"
+            android:textSize="30dp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:textColor="@color/colorTextInput"
+            android:id="@+id/tvPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_input_login"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/textHint"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_below="@id/tvUsername"
+            android:textSize="30dp" />
+        <CheckBox
+            android:id="@+id/checkSave"
+            android:text="Save your account"
+            android:buttonTint="@color/textHint"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/tvPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:id="@+id/lnBtn"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/checkSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:alpha="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textSize="20dp"
+                android:background="@drawable/custom_btn"/>
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:alpha="0.6"
+                android:textSize="20dp"
+                android:background="@drawable/custom_btn"
+                android:text="Register"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lnBtn"
+            android:text="forgot your account"
+            android:textStyle="italic"
+
+            android:textSize="20dp"
+            android:textColor="#CCCCCC"
+            android:textDirection="firstStrong"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+
+
+</layout>

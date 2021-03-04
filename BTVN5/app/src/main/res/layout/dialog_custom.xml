@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f8f8ff"
+        android:backgroundTint="@android:color/holo_blue_bright"
+        android:alpha="0.5"
+        >
+
+        <ProgressBar
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/proBar"
+            style="@style/SpinKitView.Small.Wave"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:indeterminateTint="@color/white"
+            android:layout_centerHorizontal="true"/>
+
+
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout
+        android:background="@mipmap/tuitien"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:background="@drawable/custom_background_listcart"
+            android:layout_weight="8"
+            android:alpha="0.9"
+            android:id="@+id/recyclerViewCart"
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+        <FrameLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@mipmap/t"
+            android:alpha="0.8"
+            android:layout_weight="3">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10000"
+                android:layout_gravity="center"
+                android:textSize="50dp"
+                android:textColor="#00CC00"
+                android:textStyle="italic|bold"
+                android:typeface="monospace"
+                style="@style/CodeFont"
+                android:id="@+id/tvPrive"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:padding="10dp"
+            android:orientation="horizontal" >
+            <Button
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center"
+                android:id="@+id/btnRemove"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Remove All"
+                android:background="@drawable/custom_btn"/>
+            <Button
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/btnOrder"
+                android:background="@drawable/custom_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Order"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</layout>

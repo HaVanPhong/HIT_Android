@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        tools:context=".MainActivity">
+        <!--    màn hình-->
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+
+            android:weightSum="2">
+            <EditText
+                android:id="@+id/edtInputNumber"
+                android:hint="Nhập phép tính!"
+                android:textSize="20dp"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <EditText
+                android:id="@+id/edtResult"
+                android:hint="Kết quả"
+                android:textSize="20dp"
+                android:gravity="right|center"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            >
+            <!--        2 dòng đầu-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="10dp"
+                android:weightSum="2"
+                android:orientation="vertical">
+                <!--            dòng đầu tiên-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:weightSum="5">
+
+                    <Button
+                        android:id="@+id/btnNumber7"
+                        android:background="@drawable/custom_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:text="7"
+                        android:textSize="20dp"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/btnNumber8"
+                        android:background="@drawable/custom_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:text="8"
+                        android:textSize="20dp"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/btnNumber9"
+                        android:background="@drawable/custom_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:text="9"
+                        android:textSize="20dp"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/btnCong"
+                        android:background="@drawable/custom_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:text="+"
+                        android:textSize="20dp"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/btnClear"
+                        android:background="@drawable/custom_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:text="C"
+                        android:textSize="20dp"
+                        android:layout_weight="1" />
+
+
+                </LinearLayout>
+                <!--            dòng thú 2-->
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="5">
+
+                    <Button
+                        android:id="@+id/btnNumber4"
+                        android:background="@drawable/custom_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:text="4"
+                        android:textSize="20dp"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/btnNumber5"
+                        android:background="@drawable/custom_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:text="5"
+                        android:textSize="20dp"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/btnNumber6"
+                        android:background="@drawable/custom_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:text="6"
+                        android:textSize="20dp"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/btnTru"
+                        android:background="@drawable/custom_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:text="-"
+                        android:textSize="20dp"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/btnClearAll"
+                        android:background="@drawable/custom_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:text="AC"
+                        android:textSize="20dp"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--        2 dòng tiếp theo chứ dấu = và sô 0-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:weightSum="10"
+                android:orientation="horizontal">
+                <!--            2 dong chứa số 0-->
+                <LinearLayout
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="2"
+                    android:orientation="vertical">
+                    <!--                dòng 789*-->
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="4">
+                        <Button
+                            android:id="@+id/btnNumber1"
+                            android:background="@drawable/custom_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:text="1"
+                            android:textSize="20dp"
+                            android:layout_weight="1" />
+
+                        <Button
+                            android:id="@+id/btnNumber2"
+                            android:background="@drawable/custom_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:text="2"
+                            android:textSize="20dp"
+                            android:layout_weight="1" />
+
+                        <Button
+                            android:id="@+id/btnNumber3"
+                            android:background="@drawable/custom_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:text="3"
+                            android:textSize="20dp"
+                            android:layout_weight="1" />
+
+                        <Button
+                            android:id="@+id/btnNhan"
+                            android:background="@drawable/custom_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:text="*"
+                            android:textSize="20dp"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+                    <!--                dòng 0,/-->
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+                        <Button
+                            android:id="@+id/btnNumber0"
+                            android:background="@drawable/custom_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:text="0"
+                            android:textSize="20dp"
+                            android:layout_weight="1"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:weightSum="2"
+                            android:orientation="horizontal"
+                            android:layout_weight="1">
+                            <Button
+                                android:id="@+id/btnPoint"
+                                android:background="@drawable/custom_button"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:text="."
+                                android:textSize="20dp"
+                                android:layout_weight="1"
+                                />
+
+                            <Button
+                                android:id="@+id/btnChia"
+                                android:background="@drawable/custom_button"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:text="/"
+                                android:textSize="20dp"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--            dấu =-->
+                <Button
+                    android:id="@+id/btnResult"
+                    android:background="@drawable/custom_button"
+                    android:layout_margin="5dp"
+                    android:text="="
+                    android:textSize="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_weight="8"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="#ffd351"
+                android:textSize="50dp"
+                android:text="HIT CLUB"
+                android:gravity="center_vertical"
+                tools:ignore="RtlCompat" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

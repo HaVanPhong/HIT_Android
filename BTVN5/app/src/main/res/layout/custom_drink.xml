@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@drawable/custom_background_for_item_drink"
+    android:layout_margin="10dp"
+    android:padding="5dp"
+    android:alpha="0.9"
+    >
+    <ImageView
+
+        android:id="@+id/imgAvt"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        />
+    <TextView
+        android:hint="name"
+        android:id="@+id/tvNameDrink"
+        android:textSize="20dp"
+        android:layout_toRightOf="@id/imgAvt"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:textColor="#CCCC66"
+        android:textStyle="italic"
+        android:typeface="monospace"
+        style="@style/CodeFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPrice"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đơn giá: "
+            android:textSize="15dp"
+            android:textStyle="bold|italic"
+            android:textColor="	#00FF00"/>
+        <TextView
+            android:id="@+id/tvCore"
+            android:textColor="#00EE00"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$"
+            android:textColor="#00FF00"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_below="@id/tvPrice"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvTru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- "
+            android:layout_gravity="center"
+            android:textSize="15dp"
+            android:textColor="#F0FFFF"/>
+        <TextView
+            android:id="@+id/tvCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="0 "
+            android:textColor="#EEEEEE"
+            android:textSize="15dp"
+            android:backgroundTint="@color/white"/>
+
+        <TextView
+            android:id="@+id/tvCong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textColor="#F0FFFF"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
